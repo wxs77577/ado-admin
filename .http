@@ -1,0 +1,21 @@
+@uri=http://localhost:3333/admin/api
+@ajson=Accept: application/json
+@json=Content-Type: application/json
+###
+GET {{uri}}/users
+{{ajson}}
+###
+GET {{uri}}/users/grid
+{{ajson}}
+###
+GET {{uri}}/users/form
+{{ajson}}
+###
+POST {{uri}}/users
+{{json}}
+{{ajson}}
+
+{
+  "username": "user4",
+  "password": "123456"
+}
